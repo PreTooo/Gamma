@@ -1,0 +1,7 @@
+main: de.pretooo.gamma.main.Main
+name: GammaAddon
+version: 1.0
+
+commands:
+  debug:
+  spielerleben:
