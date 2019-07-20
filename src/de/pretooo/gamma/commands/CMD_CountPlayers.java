@@ -15,6 +15,7 @@ public class CMD_CountPlayers implements CommandExecutor {
         if(p.hasPermission("gamma.count") || p.isOp()) {
             for (Player all : Bukkit.getOnlinePlayers()) {
                 Main.getInstance().alive.add(all.getName());
+                Bukkit.broadcastMessage("§2§lGAMMA §7» §eDas Projekt startet mit §b" + Main.getInstance().alive.size() + " §eSpielern.");
 
             }
 

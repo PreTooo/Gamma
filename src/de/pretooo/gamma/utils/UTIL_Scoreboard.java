@@ -30,26 +30,22 @@ public class UTIL_Scoreboard {
         Score alive = o.getScore("§7» §bLebende Spieler:");
         Score dead = o.getScore("§7» §bGestorbene Spieler:");
         Score time = o.getScore("§7» §bZeit:");
-        Score timeleft = o.getScore("§7» §bZeit bis Server schließt:");
 
         Score alivea = o.getScore("   §e" + aalive);
         Score deada = o.getScore("   §e" + adead);
         Score timea = o.getScore("   §e" + atime);
-        Score timelefta = o.getScore("   §enullll");
 
         Score spacer0 = o.getScore("§e");
         Score spacer1 = o.getScore("§f");
         Score spacer2 = o.getScore("§g");
         Score spacer3 = o.getScore("§h");
 
-        alive.setScore(12);
-        alivea.setScore(11);
-        spacer0.setScore(10);
-        dead.setScore(9);
-        deada.setScore(8);
-        spacer1.setScore(7);
-        timeleft.setScore(6);
-        timelefta.setScore(5);
+        spacer1.setScore(10);
+        alive.setScore(9);
+        alivea.setScore(8);
+        spacer0.setScore(7);
+        dead.setScore(6);
+        deada.setScore(5);
         spacer2.setScore(4);
         time.setScore(3);
         timea.setScore(2);

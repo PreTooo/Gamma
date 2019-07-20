@@ -10,6 +10,7 @@ public class EVENT_onPlayerDeath implements Listener {
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent e){
         Player p = e.getEntity();
+        Main.getInstance().alive.remove(p.getName());
         Main.getInstance().dead.add(p.getName());
 
     }

@@ -10,7 +10,20 @@ public class GetDeads implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         Player p = (Player)commandSender;
-        p.sendMessage("" + Main.getInstance().dead.size());
+        if(p.hasPermission("gamma.admin") || p.isOp()){
+            if(strings.length == 1){
+                if(strings[0].equalsIgnoreCase("alive")){
+                    p.sendMessage("" + Main.getInstance().alive.size());
+
+                } else if(strings[0].equalsIgnoreCase("dead")){
+                    p.sendMessage("" + Main.getInstance().dead.size());
+
+                }
+
+            }
+
+        }
+
         return false;
     }
 }
